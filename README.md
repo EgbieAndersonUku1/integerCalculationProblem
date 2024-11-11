@@ -1,6 +1,5 @@
-# integerCalculationProblem
 
-# Integer Calculation Program
+### Integer Calculation Program
 
 This program was inspired by an online question to create a solution to the following problem:
 
