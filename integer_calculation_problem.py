@@ -1,3 +1,4 @@
+
 '''
 Problem
 =======
@@ -17,15 +18,17 @@ each of the calculations, using a phrase that identifies the value
 
 '''
 
-
 def get_user_num_input():
     """Prompts the user to enter a number and ensures it is an integer."""
     while True:
-        value = input("Enter a number: ")
-        if value.isdigit():
+        
+        try:
+            value = input("Enter a number: ")
             return int(value)
-        else:
-            print("Please enter a valid integer.")
+        except ValueError as e:
+            pass
+        
+        print("Please enter a valid integer.", end="\n")
 
 
 def prompt_user_for_number(num_of_time_to_prompt=5):
